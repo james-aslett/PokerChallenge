@@ -1,4 +1,8 @@
-﻿namespace ConsoleApp1;
+﻿using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using Microsoft.VisualBasic;
+
+namespace ConsoleApp1;
 
 internal class Program
 {
@@ -46,16 +50,39 @@ internal class Program
 
         //Suits: D/C/H/S
         //Values (low > high): 2/3/4/5/6/7/8/9/10(T)J/Q/K/A
+        int p1Score = 0;
 
-        
+        int diamonds = one.SelectMany(x => x).Count(c => c == 'D');
+        int clubs = one.SelectMany(x => x).Count(c => c == 'C');
+        int hearts = one.SelectMany(x => x).Count(c => c == 'H');
+        int spades = one.SelectMany(x => x).Count(c => c == 'S');
 
+        int tens = one.SelectMany(x => x).Count(c => c == 'T');
+        int jokers = one.SelectMany(x => x).Count(c => c == 'J');
+        int queens = one.SelectMany(x => x).Count(c => c == 'Q');
+        int kings = one.SelectMany(x => x).Count(c => c == 'K');
+        int aces = one.SelectMany(x => x).Count(c => c == 'A');
 
+        if (tens > 0 && jokers > 0 && queens > 0 && kings > 0 && aces > 0)
+        {
+            //royal flush
+            p1Score = 10;
+        }
 
+        //scores
+        //high card 1
+        //one pair 2
+        //two pairs 3
+        //three of a kind 4
+        //straight 5
+        //flush 6
+        //full house 7
+        //four of a kind 8
+        //straight flush 9
 
+        //once p1Score/p2Score is known, if they match then 
 
-
-        //if PlayerOne wins, return Player.PlayerOne, else return Player.PlayerTwo
-        return Player.PlayerOne;
+        return (p1Score > 0) ? Player.PlayerOne : Player.PlayerTwo;
     }
 
     private enum Player

@@ -13,3 +13,4 @@ C:\Development\PokerChallenge\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
 C:\Development\PokerChallenge\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
 C:\Development\PokerChallenge\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll
 C:\Development\PokerChallenge\ConsoleApp1\bin\Debug\net6.0\poker_hands.txt
+C:\Development\PokerChallenge\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.sourcelink.json
