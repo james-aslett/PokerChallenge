@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jamesa\\.nuget\\packages\\": {}
+    "C:\\Users\\james\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\LEARNING\\C#\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\james\\Source\\Repos\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Development\\LEARNING\\C#\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\jamesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\LEARNING\\C#\\PokerChallenge\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\james\\Source\\Repos\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\james\\Source\\Repos\\PokerChallenge\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jamesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
