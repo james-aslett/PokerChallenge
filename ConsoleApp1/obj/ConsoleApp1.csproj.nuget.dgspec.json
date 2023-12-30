@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {}
+    "C:\\Users\\james\\source\\repos\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
+    "C:\\Users\\james\\source\\repos\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj",
-        "projectName": "PokerChallenge",
-        "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\james\\source\\repos\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\obj\\",
+        "outputPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",

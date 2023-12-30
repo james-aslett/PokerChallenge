@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj": {}
+    "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj": {
+    "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
+        "projectUniqueName": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
         "projectName": "PokerChallengeTests",
-        "projectPath": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
-        "packagesPath": "C:\\Users\\jamesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallengeTests\\obj\\",
+        "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
+        "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jamesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
-                "projectPath": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj"
+              "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
+                "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj"
               }
             }
           }
@@ -81,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
+    "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj",
         "projectName": "PokerChallenge",
-        "projectPath": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj",
-        "packagesPath": "C:\\Users\\jamesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jamesa\\source\\repos\\PokerChallenge\\PokerChallenge\\obj\\",
+        "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj",
+        "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jamesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

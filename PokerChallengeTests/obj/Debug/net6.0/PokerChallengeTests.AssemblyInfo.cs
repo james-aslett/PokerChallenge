@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokerChallengeTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fada15eadfc7c6bb83db972261155a7f8cb1826")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokerChallengeTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokerChallengeTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
