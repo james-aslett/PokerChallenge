@@ -3984,19 +3984,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\james\\.nuget\\packages\\": {}
+    "C:\\Users\\jamesa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
+      "projectUniqueName": "C:\\Users\\jamesa\\Source\\Repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
       "projectName": "PokerChallengeTests",
-      "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
-      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallengeTests\\obj\\",
+      "projectPath": "C:\\Users\\jamesa\\Source\\Repos\\PokerChallenge\\PokerChallengeTests\\PokerChallengeTests.csproj",
+      "packagesPath": "C:\\Users\\jamesa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jamesa\\Source\\Repos\\PokerChallenge\\PokerChallengeTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jamesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4010,8 +4010,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
-              "projectPath": "C:\\Users\\james\\source\\repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj"
+            "C:\\Users\\jamesa\\Source\\Repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj": {
+              "projectPath": "C:\\Users\\jamesa\\Source\\Repos\\PokerChallenge\\PokerChallenge\\PokerChallenge.csproj"
             }
           }
         }
@@ -4063,7 +4063,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

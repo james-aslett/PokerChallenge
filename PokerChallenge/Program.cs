@@ -1,4 +1,4 @@
-﻿using static PokerChallenge.Ranks;
+﻿using static PokerChallenge.Cards;
 
 namespace PokerChallenge;
 
@@ -6,10 +6,16 @@ public class Program
 {
     public static void Main()
     {
+        var playerOneWinCount = PlayGame(File.ReadLines("poker_hands.txt"));
+        Console.WriteLine($"Player 1 won {playerOneWinCount} times.");
+
+    }
+
+    public static int PlayGame(IEnumerable<string> hands)
+    {
         var playerOneWinCount = 0;
 
-        var pokerHands = File.ReadLines("poker_hands.txt");
-        foreach (var hand in pokerHands)
+        foreach (var hand in hands)
         {
             var players = SplitPlayers(hand);
             var winner = DetermineWinner(players);
@@ -19,7 +25,7 @@ public class Program
             }
         }
 
-        Console.WriteLine($"Player 1 won {playerOneWinCount} times.");
+        return playerOneWinCount;
     }
 
     private static string[][] SplitPlayers(string hand)
@@ -46,51 +52,36 @@ public class Program
         var playerOneCards = players[0];
         var playerTwoCards = players[1];
 
-        int playerOneScore = 0;
-        int playerTwoScore = 0;
+        var playerOneScore = CalculateScore(playerOneCards);
+        var playerTwoScore = CalculateScore(playerTwoCards);
 
-        if (HasRoyalFlush(playerOneCards))
+        if (playerOneScore == playerTwoScore)
         {
-            playerOneScore = 10;
-        }
-        else if (HasStraightFlush(playerOneCards))
-        {
-            playerOneScore = 9;
-        }
-        else if (HasFourOfAKind(playerOneCards))
-        {
-            playerOneScore = 8;
-        }
-        else if (HasFullHouse(playerOneCards))
-        {
-            playerOneScore = 7;
-        }
-        else if (HasFlush(playerOneCards))
-        {
-            playerOneScore = 6;
-        }
-        else if (HasStraight(playerOneCards))
-        {
-            playerOneScore = 5;
-        }
-        else if (HasThreeOfAKind(playerOneCards))
-        {
-            playerOneScore = 4;
-        }
-        else if (HasTwoPairs(playerOneCards))
-        {
-            playerOneScore = 3;
-        }
-        else if (HasOnePair(playerOneCards))
-        {
-            playerOneScore = 2;
-        }
-        else
-        {
-            playerOneScore = GetHighCard(playerOneCards);
+            //implement tiebreaker logic
+
+            // For example, if both players have a pair, compare the pair ranks
+
+            // If pairs are of the same rank, compare the high card ranks
+            // Implement similar logic for other hand types
+
         }
 
         return (playerOneScore > playerTwoScore) ? Player.PlayerOne : Player.PlayerTwo;
+    }
+
+    private static int CalculateScore(string[] cards)
+    {
+        if (HasRoyalFlush(cards)) return 10;
+        if (HasStraightFlush(cards)) return 9;
+        if (HasFourOfAKind(cards)) return 8;
+        if (HasFullHouse(cards)) return 7;
+        if (HasFlush(cards)) return 6;
+        if (HasStraight(cards)) return 5;
+        if (HasThreeOfAKind(cards)) return 4;
+        if (HasTwoPairs(cards)) return 3;
+        if (HasOnePair(cards)) return 2;
+
+        return 0;
     }
 
     public enum Player

@@ -4,19 +4,12 @@ using System;
 
 namespace PokerChallenge
 {
-    public class Ranks
+    public class Cards
     {
         public static int GetHighCard(string[] cards)
         {
-            var playerScore = 0;
-
-            foreach (var card in cards)
-            {
-                var score = GetCardScore(card);
-                playerScore += score;
-            }
-
-            return playerScore;
+            var cardRanks = cards.Select(card => GetCardScore(card)).OrderBy(rank => rank).ToArray();
+            return cardRanks.Max();
         }
 
         public static bool HasStraightFlush(string[] cards)
@@ -34,7 +27,7 @@ namespace PokerChallenge
         public static bool HasFourOfAKind(string[] cards)
         {
             //4 cards are same value (1st char)
-            var cardRanks = cards.Select(card => GetCardScore(card)).OrderBy(rank => rank).ToArray();
+            var cardRanks = cards.Select(card => GetCardScore(card)).ToArray();
 
             //group each value, then check if any group has a value of 4
             var groups = cardRanks.GroupBy(x => x);
@@ -99,16 +92,15 @@ namespace PokerChallenge
             //2 different pairs (1st char)
             var cardRanks = cards.Select(card => GetCardScore(card)).OrderBy(rank => rank).ToArray();
 
-            //group each value, then check if any group has a value of 2
             var groups = cardRanks.GroupBy(x => x);
 
-            if (groups.Any(group => group.Count() == 2))
-            {
-                //check for another group
-            }
+            // Count the number of groups with a count of 2
+            int countOfPairs = groups.Count(group => group.Count() == 2);
 
-            return false;
+            // Only return only if they are 2 distinct pairs
+            return countOfPairs == 2;
         }
+
         public static bool HasOnePair(string[] cards)
         {
             //2 cards of same value (1st char)
