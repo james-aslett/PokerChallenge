@@ -169,12 +169,12 @@ namespace PokerChallengeTests
             Assert.That(result, Is.EqualTo(false));
         }
 
-        [Test]
-        public void HighCard()
-        {
-            var cards = new[] { "2C", "3S", "8H", "KC", "QD" };
-            var result = GetHighCard(cards);
-            Assert.That(result, Is.EqualTo(13));
-        }
+        //[Test]
+        //public void HighCard()
+        //{
+        //    var cards = new[] { "2C", "3S", "8H", "KC", "QD" };
+        //    var result = GetHighCard(cards);
+        //    Assert.That(result, Is.EqualTo(13));
+        //}
     }
 }

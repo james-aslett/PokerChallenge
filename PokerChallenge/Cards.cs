@@ -6,10 +6,40 @@ namespace PokerChallenge
 {
     public class Cards
     {
-        public static int GetHighCard(string[] cards)
+        public static int GetHighCard(string[] cards, bool includesPairs)
         {
             var cardRanks = cards.Select(card => GetCardScore(card)).OrderBy(rank => rank).ToArray();
-            return cardRanks.Max();
+
+            if (HasOnePair(cards))
+            {
+
+
+            }
+
+            if (HasTwoPairs(cards))
+            {
+
+            }
+
+            //else no pairs - is the above logic correct?
+
+            if (!includesPairs)
+            {
+                // Exclude pairs
+                var excludePairs = cardRanks.Distinct();
+
+                // Get the highest card
+                if (excludePairs.Any())
+                {
+                    return excludePairs.Max();
+                }
+            }
+            var pairs = cardRanks.GroupBy(rank => rank).Where(group => group.Count() == 2).Select(group => group.Key).ToList();
+
+
+            var x = HasTwoPairs
+            // All cards are in pairs, return the highest rank from pairs
+            return pairs.Max();
         }
 
         public static bool HasStraightFlush(string[] cards)

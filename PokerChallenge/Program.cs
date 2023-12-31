@@ -52,37 +52,39 @@ public class Program
         var playerOneCards = players[0];
         var playerTwoCards = players[1];
 
-        var playerOneScore = CalculateScore(playerOneCards);
-        var playerTwoScore = CalculateScore(playerTwoCards);
+        var playerOne = CalculateScore(playerOneCards);
+        var playerTwo = CalculateScore(playerTwoCards);
+
+        var playerOneScore = playerOne.score;
+        var playerTwoScore = playerTwo.score;
+        var playerOneIncludesPairs = playerOne.includesPairs;
+        var playerTwoIncludesPairs = playerTwo.includesPairs;
 
         if (playerOneScore == playerTwoScore)
         {
-            //implement tiebreaker logic
-
-            // For example, if both players have a pair, compare the pair ranks
-
-            // If pairs are of the same rank, compare the high card ranks
-            // Implement similar logic for other hand types
+            playerOneScore = GetHighCard(playerOneCards, playerOneIncludesPairs);
+            playerTwoScore = GetHighCard(playerTwoCards, playerTwoIncludesPairs);
 
         }
 
         return (playerOneScore > playerTwoScore) ? Player.PlayerOne : Player.PlayerTwo;
     }
 
-    private static int CalculateScore(string[] cards)
+    private static (int score, bool includesPairs) CalculateScore(string[] cards)
     {
-        if (HasRoyalFlush(cards)) return 10;
-        if (HasStraightFlush(cards)) return 9;
-        if (HasFourOfAKind(cards)) return 8;
-        if (HasFullHouse(cards)) return 7;
-        if (HasFlush(cards)) return 6;
-        if (HasStraight(cards)) return 5;
-        if (HasThreeOfAKind(cards)) return 4;
-        if (HasTwoPairs(cards)) return 3;
-        if (HasOnePair(cards)) return 2;
+        if (HasRoyalFlush(cards)) return (10, false);
+        if (HasStraightFlush(cards)) return (9, false);
+        if (HasFourOfAKind(cards)) return (8, false);
+        if (HasFullHouse(cards)) return (7, false);
+        if (HasFlush(cards)) return (6, false);
+        if (HasStraight(cards)) return (5, false);
+        if (HasThreeOfAKind(cards)) return (4, false);
+        if (HasTwoPairs(cards)) return (3, true);
+        if (HasOnePair(cards)) return (2, true);
 
-        return 0;
+        return (0, false);
     }
+
 
     public enum Player
     {
